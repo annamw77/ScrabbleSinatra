@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Scrabble Scoring</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="css" href="stylesheets/styles.css">
+    <link href='https://fonts.googleapis.com/css?family=Crimson+Text' rel='stylesheet' type='text/css'>
+  </head>
+
+  <body>
+    <header>
+      <h1>Scrabble Scoring</h1>
+      <nav>
+        <ul class="top">
+          <li><a class="home" href="/">home</a></li>
+          <li><a href="/score">score one word</a></li>
+          <li><a href="/score_many">score multiple words</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section>
+      <%= yield %>
+    </section>
+
+  </body>
+  <footer>
+    <address>
+      <a href="mailto:annie.marie.mason@gmail.com">contact me</a>
+    </address>
+  </footer>
+</html>

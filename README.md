@@ -2,7 +2,7 @@
 Let's leverage what we've learned about Sinatra and our earlier Scrabble project to build an online Scrabble scoring site.
 
 ## Baseline Setup
-This is an individual project (but yinz should still help each other because <3). 
+This is an individual project (but yinz should still help each other because <3).
 
 - You'll need your Scrabble code from a couple of weeks ago.
 - Fork this repo to your Github account, then clone it into your `projects` directory.
