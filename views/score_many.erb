@@ -1,11 +1,36 @@
 <h2>Score Multiple Words</h2>
 
+<%= params %>
+<!-- this is how you access just the number -->
+<%= params["num"] %>
+
+<% if @num == nil %>
+  <form action="" method="post" accept-charset="utf-8">
+    <label for="number_of_words">How many words would you like to score?</label>
+    <input type="number" name="num" value="0" id="number_of_words">
+    <input type="submit" value="Submit">
+  </form>
+<% end %>
+
+<% if @num %>
+  <form action="" method="post" accept-charset="utf-8">
+    <label for="word">Enter A Word To Score</label>
+    <input type="text" name="words[word_to_score]" value="" id="word">
+    <input type="submit" value="Submit">
+  </form>
+<% end %>
+
+<!-- SELECT: How many words would you like to score?
+Chooses #.
+Display # textboxes for words to score
+Submit and display words/scores -->
+
 <!-- Allow the user to score multiple words with a single form
 Determine how to allow the user to input multiple words
 **One text box per word
 
 What input types would best allow users to enter a variable number of words?
-**Orrr maybe not one text box per word :)
+**A number selector textbox.
 
 What instruction/guidance can you offer the user to make your interface understandable?
 **You can use this application to score multiple scrabble words.

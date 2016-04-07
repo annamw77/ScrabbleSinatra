@@ -20,6 +20,11 @@ class MyApp < Sinatra::Base
     erb :score_many
   end
 
+  post '/score_many' do
+    @num = params["num"]
+    erb :score_many
+  end
+
  #  post '/my-first-form' do
  #    @my_peep = Peep.new(params["peep"])
  #    erb :my_first_form
