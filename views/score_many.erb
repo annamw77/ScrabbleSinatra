@@ -14,11 +14,18 @@
 
 <% if @num %>
   <form action="" method="post" accept-charset="utf-8">
-    <label for="word">Enter A Word To Score</label>
-    <input type="text" name="words[word_to_score]" value="" id="word">
+    <fieldset>
+      <legend>Enter words to score:</legend>
+      <% @num.times do %>
+        <label><input type="text" name="words[]"></label>
+      <% end %>
+    </fieldset>
     <input type="submit" value="Submit">
   </form>
 <% end %>
+
+<!-- produces: {"words"=>["cat", "dog"]} -->
+
 
 <!-- SELECT: How many words would you like to score?
 Chooses #.

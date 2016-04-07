@@ -21,7 +21,7 @@ class MyApp < Sinatra::Base
   end
 
   post '/score_many' do
-    @num = params["num"]
+    @num = params["num"].to_i
     erb :score_many
   end
 
