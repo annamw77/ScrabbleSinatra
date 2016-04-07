@@ -13,7 +13,7 @@ scores: <%= @score_array %><br><br>
   </form>
 <% end %>
 
-<% if @num %>
+<% if @num != nil && @words == nil %>
   <form action="" method="post" accept-charset="utf-8">
     <fieldset>
       <legend>Enter words to score:</legend>
@@ -25,9 +25,17 @@ scores: <%= @score_array %><br><br>
   </form>
 <% end %>
 
-<% if @words %>
-<!-- SCORING OUTPUT GOES HERE -->
+<% if @score_array != nil %>
+  <% @words.each_with_index do |word, index| %>
+    <%=  word.upcase %> : <%= @score_array[index] %> points <br>
+  <% end %>
 <% end %>
+
+<!-- @num = params["num"].to_i
+@words = params["words"]
+  if @words != nil
+    @score_array = @words.map do |word|
+      Scrabble::Scoring.score(word) -->
 <!-- {"words"=>["cat", "", "", "", "", "", "", "", "", ""]} -->
 
 
