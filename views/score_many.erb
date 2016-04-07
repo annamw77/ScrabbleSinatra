@@ -1,8 +1,9 @@
 <h2>Score Multiple Words</h2>
 
-<%= params %>
-<!-- this is how you access just the number -->
-<%= params["num"] %>
+current params: <%= params %><br>
+num: <%= @num %><br>
+words: <%= @words %><br>
+scores: <%= @score_array %><br><br>
 
 <% if @num == nil %>
   <form action="" method="post" accept-charset="utf-8">
@@ -17,14 +18,18 @@
     <fieldset>
       <legend>Enter words to score:</legend>
       <% @num.times do %>
-        <label><input type="text" name="words[]"></label>
+        <label><input type="text" name="words[]" value="" id="word"></label>
       <% end %>
     </fieldset>
     <input type="submit" value="Submit">
   </form>
 <% end %>
 
-<!-- produces: {"words"=>["cat", "dog"]} -->
+<% if @words %>
+<!-- SCORING OUTPUT GOES HERE -->
+<% end %>
+<!-- {"words"=>["cat", "", "", "", "", "", "", "", "", ""]} -->
+
 
 
 <!-- SELECT: How many words would you like to score?

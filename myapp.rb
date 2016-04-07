@@ -22,13 +22,14 @@ class MyApp < Sinatra::Base
 
   post '/score_many' do
     @num = params["num"].to_i
+    @words = params["words"]
+      if @words != nil
+        @score_array = @words.map do |word|
+          Scrabble::Scoring.score(word)
+        end
+      end
     erb :score_many
   end
-
- #  post '/my-first-form' do
- #    @my_peep = Peep.new(params["peep"])
- #    erb :my_first_form
- # end
 
   run!
 end
