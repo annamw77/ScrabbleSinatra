@@ -2,6 +2,14 @@ html {
 margin-top: 0rem;
 padding-top: 0rem;
 width: 100%;
+background-color: white;
+color: black;
+text-align: center;
+}
+
+body {
+  margin: 0 auto;
+  /*width: 100%;*/
 }
 
 header {
@@ -13,7 +21,8 @@ header {
 h1 {
   /*border: black solid 1px;*/
   background-color: rgba(255, 255, 255, 0.75);
-  text-align: center;
+  color: black;
+  /*text-align: center;*/
   margin-bottom: 0rem;
   margin-top: 0rem;
   font-size: 5rem;
@@ -40,4 +49,15 @@ header a {
 
 ul.top {
   margin-top: 0rem;
+}
+
+section {
+  margin: 0 auto;
+  /*background: black url(/images/scrabble.jpg) center repeat;*/
+  /*background-color: rgba(255, 255, 255, 0.75);*/
+  width: 50%;
+}
+
+footer {
+  margin-top: 4rem;
 }

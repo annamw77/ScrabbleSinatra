@@ -7,5 +7,5 @@
 </form>
 
 <% if @points %>
-    The word <%= params["word_to_score"] %> is worth <%= @points %> points!
+    <%= params["word_to_score"].upcase %>: <%= @points %> points
 <% end %>
