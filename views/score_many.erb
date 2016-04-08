@@ -29,6 +29,7 @@ scores: <%= @score_array %><br><br> -->
   <% @words.each_with_index do |word, index| %>
     <%=  word.upcase %> : <%= @score_array[index] %> points <br>
   <% end %>
+  <a href="#" id="tryagain">Try Again</a>
 <% end %>
 
 <!-- @num = params["num"].to_i
