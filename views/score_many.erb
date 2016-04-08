@@ -7,8 +7,8 @@ scores: <%= @score_array %><br><br>
 
 <% if @num == nil %>
   <form action="" method="post" accept-charset="utf-8">
-    <label for="number_of_words">How many words would you like to score?</label>
-    <input type="number" name="num" value="0" id="number_of_words">
+    <label for="number_of_words">How many words would you like to score?</label><br>
+    <input type="number" name="num" value="0" id="number_of_words" class="numinput">
     <input type="submit" value="Submit">
   </form>
 <% end %>

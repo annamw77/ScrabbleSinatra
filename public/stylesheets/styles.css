@@ -2,27 +2,28 @@ html {
 margin-top: 0rem;
 padding-top: 0rem;
 width: 100%;
+height: 100%;
 background-color: white;
-color: black;
+color: white;
 text-align: center;
+font-family: 'News Cycle', sans-serif;
 }
 
 body {
   margin: 0 auto;
-  /*width: 100%;*/
+  background: url(/images/scrabble.jpg) center repeat;
+  background-size: 100%;
+  padding: 0;
+  min-height: 100%;
 }
 
 header {
-  background: url(/images/scrabble.jpg) center repeat;
-  background-size: 100%;
-  height: 20rem;
+  height: auto;
+  margin-bottom: 3rem;
 }
 
 h1 {
-  /*border: black solid 1px;*/
-  background-color: rgba(255, 255, 255, 0.75);
-  color: black;
-  /*text-align: center;*/
+  background-color: rgba(38, 12, 12, 0.75);
   margin-bottom: 0rem;
   margin-top: 0rem;
   font-size: 5rem;
@@ -44,7 +45,12 @@ header a {
   color: black;
   text-decoration: none;
   font-size: 2rem;
-  padding: 1rem;
+  padding: 3rem;
+}
+
+a:hover {
+    color: darkred;
+    text-decoration: underline;
 }
 
 ul.top {
@@ -53,11 +59,41 @@ ul.top {
 
 section {
   margin: 0 auto;
-  /*background: black url(/images/scrabble.jpg) center repeat;*/
-  /*background-color: rgba(255, 255, 255, 0.75);*/
-  width: 50%;
+  background-color: rgba(38, 12, 12, 0.75);
+  width: 40%;
+  height: 20rem;
+  border-radius: .5rem;
 }
 
 footer {
   margin-top: 4rem;
+}
+
+h2 {
+  font-size: 1.75rem;
+}
+
+input {
+    border: .15rem solid white;
+    -webkit-box-shadow:
+      inset 0 0 8px  rgba(0,0,0,0.1),
+            0 0 16px rgba(0,0,0,0.1);
+    -moz-box-shadow:
+      inset 0 0 8px  rgba(0,0,0,0.1),
+            0 0 16px rgba(0,0,0,0.1);
+    box-shadow:
+      inset 0 0 8px  rgba(0,0,0,0.1),
+            0 0 16px rgba(0,0,0,0.1);
+    padding: 5px;
+    background: rgba(255,255,255,0.5);
+    margin: 5px 0 10px 0;
+}
+
+.numinput {
+  width: 30px;
+}
+
+p.intro {
+  padding-top: 3.5rem;
+  font-size: 2.5rem;
 }
