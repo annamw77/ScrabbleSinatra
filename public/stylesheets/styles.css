@@ -63,6 +63,7 @@ section {
   width: 40%;
   height: 20rem;
   border-radius: .5rem;
+  text-align: center;
 }
 
 footer {
@@ -71,6 +72,7 @@ footer {
 
 h2 {
   font-size: 1.75rem;
+  border-bottom: double 5px white;
 }
 
 input {
@@ -91,6 +93,29 @@ input {
 
 .numinput {
   width: 30px;
+}
+
+/*input[type=text],
+input[type=url],
+input[type=tel],
+input[type=number],
+input[type=color],
+input[type=email], {
+   /* And that ain't all of them... */
+
+input#word {
+  margin-bottom: 0rem;
+}
+
+div.word_score_display {
+  color: darkred;
+  font-size: 1.75rem;
+  background: rgba(255,255,255,0.5);
+  width: 50%;
+  margin: 0 auto;
+  margin-top: .25rem;
+  padding: 2rem;
+  border: .12rem solid white;
 }
 
 p.intro {
