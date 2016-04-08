@@ -103,8 +103,13 @@ input[type=color],
 input[type=email], {
    /* And that ain't all of them... */
 
-input#word {
+input#word, input#number_of_words {
   margin-bottom: 0rem;
+}
+
+input#submit {
+  color: darkred;
+  font-size: 1rem;
 }
 
 div.word_score_display {
@@ -121,4 +126,8 @@ div.word_score_display {
 p.intro {
   padding-top: 3.5rem;
   font-size: 2.5rem;
+}
+
+fieldset {
+  border: none;
 }

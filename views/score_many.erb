@@ -1,15 +1,15 @@
 <h2>Score Multiple Words</h2>
-
+<!--
 current params: <%= params %><br>
 num: <%= @num %><br>
 words: <%= @words %><br>
-scores: <%= @score_array %><br><br>
+scores: <%= @score_array %><br><br> -->
 
 <% if @num == nil %>
   <form action="" method="post" accept-charset="utf-8">
     <label for="number_of_words">How many words would you like to score?</label><br>
-    <input type="number" name="num" value="0" id="number_of_words" class="numinput">
-    <input type="submit" value="Submit">
+    <input type="number" name="num" value="1" id="number_of_words" class="numinput" min="1" max="10"><br>
+    <input type="submit" id="submit" value="Submit">
   </form>
 <% end %>
 
@@ -21,7 +21,7 @@ scores: <%= @score_array %><br><br>
         <label><input type="text" name="words[]" value="" id="word"></label>
       <% end %>
     </fieldset>
-    <input type="submit" value="Submit">
+    <input type="submit" id="submit" value="Submit">
   </form>
 <% end %>
 
