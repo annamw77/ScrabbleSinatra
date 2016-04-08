@@ -18,7 +18,15 @@ scores: <%= @score_array %><br><br> -->
     <fieldset>
       <legend>Enter words to score:</legend>
       <% @num.times do %>
-        <label><input type="text" name="words[]" value="" id="word"></label>
+        <label>
+          <input
+            type="text"
+            name="words[]"
+            value=""
+            id="word"
+            pattern="^[a-zA-Z]{1,7}$"
+            title="Word must be between 1-7 letters.">
+        </label>
       <% end %>
     </fieldset>
     <input type="submit" id="submit" value="Submit">
@@ -26,10 +34,14 @@ scores: <%= @score_array %><br><br> -->
 <% end %>
 
 <% if @score_array != nil %>
+  <a href="/score_many" class="button_link">Score More Words</a><br>
   <% @words.each_with_index do |word, index| %>
-    <%=  word.upcase %> : <%= @score_array[index] %> points <br>
+    <div class="words_scores_display">
+      <%=  word.upcase %> <br>
+      <%= @score_array[index] %> points
+    </div>
   <% end %>
-  <a href="#" id="tryagain">Try Again</a>
+  <!-- <a href="#" id="tryagain">Try Again</a> -->
 <% end %>
 
 <!-- @num = params["num"].to_i
