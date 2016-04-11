@@ -1,9 +1,4 @@
 <h2>Score Multiple Words</h2>
-<!--
-current params: <%= params %><br>
-num: <%= @num %><br>
-words: <%= @words %><br>
-scores: <%= @score_array %><br><br> -->
 
 <% if @num == nil %>
   <form action="" method="post" accept-charset="utf-8">
@@ -41,32 +36,4 @@ scores: <%= @score_array %><br><br> -->
       <%= @score_array[index] %> points
     </div>
   <% end %>
-  <!-- <a href="#" id="tryagain">Try Again</a> -->
 <% end %>
-
-<!-- @num = params["num"].to_i
-@words = params["words"]
-  if @words != nil
-    @score_array = @words.map do |word|
-      Scrabble::Scoring.score(word) -->
-<!-- {"words"=>["cat", "", "", "", "", "", "", "", "", ""]} -->
-
-
-
-<!-- SELECT: How many words would you like to score?
-Chooses #.
-Display # textboxes for words to score
-Submit and display words/scores -->
-
-<!-- Allow the user to score multiple words with a single form
-Determine how to allow the user to input multiple words
-**One text box per word
-
-What input types would best allow users to enter a variable number of words?
-**A number selector textbox.
-
-What instruction/guidance can you offer the user to make your interface understandable?
-**You can use this application to score multiple scrabble words.
-Please enter the words, separated by commas, in the box below**
-
-Display each word and its score in the rendered view. -->
